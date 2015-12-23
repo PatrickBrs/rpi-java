@@ -4,8 +4,8 @@ matrix:
   VERSION:
     - 1.7.0
   FLAVOR:
-    - -jdk
-    - -jre
+    - jdk
+    - jre
 
 publish:
   docker:
@@ -14,7 +14,7 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-java
     tag:
-      - $$VERSION$$FLAVOR
+      - $$VERSION-$$FLAVOR
     file: Dockerfile.$$FLAVOR
 
 notify:
