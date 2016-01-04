@@ -1,12 +1,3 @@
-#debug: true
-
-matrix:
-  VERSION:
-    - 1.8.0
-  FLAVOR:
-    - jdk
-    - jre
-
 publish:
   docker:
     username: $$DOCKER_USER
@@ -14,8 +5,9 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-java
     tag:
-      - $$VERSION-$$FLAVOR
-    file: Dockerfile.$$FLAVOR
+      - $$VERSION-jde
+      - $$VERSION-jdk
+
 
 notify:
   slack:
