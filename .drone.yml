@@ -5,8 +5,8 @@ publish:
     email: $$DOCKER_EMAIL
     repo: hypriot/rpi-java
     tag:
-      - $$VERSION-jde
-      - $$VERSION-jdk
+      - 1.8.0-jde
+      - 1.8.0-jdk
 
 
 notify:
